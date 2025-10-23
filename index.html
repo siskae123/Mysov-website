@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SOV — Siska • Orva • Viana | Official Cover</title>
+  <meta name="description" content="SOV - Siska Orva Viana. Fanmade Webtoon cover & story page. Download cover SVG, color palette, and story details." />
+  <style>
+    :root{
+      --lavender:#BDA7F3;
+      --violet:#7C5AB4;
+      --moon:#DDECF7;
+      --gold:#F6D58A;
+      --sun:#F4C24B;
+      --mint:#C9E6D8;
+      --sky:#CFE9F8;
+      --blush:#F4D7E6;
+      --ivory:#FFF9F2;
+      --accent:#8b5cf6;
+      --text:#332b3f;
+      --muted:#6b6470;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--ivory),#fff 30%,var(--moon));
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    header{
+      max-width:1100px;
+      margin:28px auto 18px;
+      padding:16px;
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .logo{
+      width:64px;height:64px;border-radius:12px;
+      background: linear-gradient(135deg,var(--gold),var(--lavender));
+      display:flex;align-items:center;justify-content:center;
+      box-shadow: 0 6px 20px rgba(124,90,180,0.15), inset 0 -6px 12px rgba(255,255,255,0.3);
+      font-family: 'Playfair Display', serif;
+      color:#fff;font-weight:700;font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    header p{margin:0;color:var(--muted);font-size:13px}
+    nav{display:flex;gap:10px}
+    .btn{
+      background:var(--accent);
+      color:#fff;padding:10px 12px;border-radius:10px;border:0;cursor:pointer;font-weight:600;
+      box-shadow:0 6px 18px rgba(124,90,180,0.15);
+    }
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(140,92,230,0.12)}
+    main{max-width:1100px;margin:0 auto;padding:18px;}
+    .layout{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); border-radius:16px;padding:16px;box-shadow:0 8px 30px rgba(80,60,120,0.06)}
+    /* COVER AREA */
+    .cover-wrap{border-radius:14px;overflow:hidden;position:relative;}
+    .cover{
+      width:100%;display:block;
+      background: linear-gradient(180deg, rgba(255,255,255,0.0), rgba(255,255,255,0.0));
+    }
+    .cover-meta{
+      position:absolute;left:18px;bottom:18px;background:var(--glass);backdrop-filter: blur(6px);
+      padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.6);
+    }
+    .cover-meta h2{margin:0;font-family:'Playfair Display',serif;color:var(--violet);font-size:18px}
+    .cover-meta p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+    /* INFO */
+    .info h3{margin:0 0 8px;font-size:16px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .character{
+      display:flex;gap:12px;align-items:flex-start;padding:8px;border-radius:10px;background:linear-gradient(180deg, rgba(250,250,255,0.9), #fff);
+      border:1px solid rgba(120,100,170,0.06)
+    }
+    .avatar{
+      width:56px;height:56px;border-radius:8px;flex:0 0 56px;display:inline-grid;place-items:center;color:#fff;font-weight:700;
+      box-shadow:0 8px 18px rgba(120,90,170,0.12);
+    }
+    .meta small{color:var(--muted)}
+    /* palette */
+    .swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .sw{width:64px;height:64px;border-radius:8px;display:flex;align-items:end;justify-content:center;padding:8px;color:#111;font-weight:700;font-size:12px;cursor:pointer;border:1px solid rgba(0,0,0,0.04)}
+    footer{max-width:1100px;margin:24px auto 80px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media (max-width:980px){
+      .layout{grid-template-columns:1fr;gap:18px}
+      nav{display:none}
+      header{padding:8px}
+    }
+    /* decorative */
+    .kicker{display:inline-block;background:linear-gradient(90deg,#fff,#fff0);padding:4px 8px;border-radius:999px;font-size:13px;color:var(--muted);border:1px dashed rgba(120,90,170,0.06)}
+    .download-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    pre{background:#fff;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.04);overflow:auto}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">SOV</div>
+      <div>
+        <h1>SOV <small style="color:var(--muted);font-size:13px">Siska • Orva • Viana</small></h1>
+        <p>Fantasy fairy manga — cover preview & story page</p>
+      </div>
+    </div>
+
+    <nav>
+      <button class="btn" id="downloadCoverBtn">Download Cover SVG</button>
+      <a class="btn secondary" href="#story">Read Story</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="layout">
+      <section>
+        <!-- COVER -->
+        <div class="card cover-wrap">
+          <!-- Cover is an inline SVG so it is downloadable and crisp -->
+          <svg id="coverSVG" class="cover" viewBox="0 0 900 1400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SOV cover">
+            <defs>
+              <linearGradient id="g-background" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#fff8f2"/>
+                <stop offset="0.35" stop-color="#f7f0ff"/>
+                <stop offset="1" stop-color="#e8f7ff"/>
+              </linearGradient>
+              <linearGradient id="g-sun" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#fff6d6"/>
+                <stop offset="1" stop-color="#f8d58a"/>
+              </linearGradient>
+              <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="18" result="b"/>
+                <feBlend in="SourceGraphic" in2="b"/>
+              </filter>
+            </defs>
+
+            <!-- background -->
+            <rect width="100%" height="100%" fill="url(#g-background)"/>
+
+            <!-- floral corners -->
+            <g transform="translate(60,80) scale(1.05)" opacity="0.95">
+              <g transform="translate(0,0) scale(0.9)">
+                <circle cx="70" cy="70" r="46" fill="#F4D7E6" opacity="0.95"/>
+                <circle cx="140" cy="40" r="36" fill="#BDA7F3" opacity="0.95"/>
+                <path d="M20 120 q40 -80 110 -50 q-30 40 -110 50z" fill="#C9E6D8" opacity="0.95"/>
+              </g>
+            </g>
+
+            <g transform="translate(650,80) scale(1.05)" opacity="0.95">
+              <g transform="translate(0,0) scale(0.9)">
+                <circle cx="70" cy="30" r="46" fill="#CFE9F8" opacity="0.95"/>
+                <circle cx="130" cy="70" r="36" fill="#BDA7F3" opacity="0.95"/>
+                <path d="M20 90 q40 -60 110 -30 q-30 30 -110 30z" fill="#F6D58A" opacity="0.95"/>
+              </g>
+            </g>
+
+            <!-- moon and light -->
+            <g transform="translate(120,220)">
+              <ellipse cx="220" cy="70" rx="220" ry="70" fill="url(#g-sun)" opacity="0.6" filter="url(#soft)"/>
+              <circle cx="640" cy="120" r="42" fill="#fff8f2" opacity="0.9"/>
+            </g>
+
+            <!-- three stylized elf portraits (abstract, decorative) -->
+            <!-- Right - Viana (purple) -->
+            <g transform="translate(560,410) scale(1.1)">
+              <ellipse cx="0" cy="-20" rx="112" ry="160" fill="#EDE6FB" stroke="#D3C6F8" stroke-width="2" />
+              <ellipse cx="-8" cy="-40" rx="76" ry="110" fill="#C7B6F3" opacity="0.98" />
+              <circle cx="-12" cy="-64" r="30" fill="#C7B6F3" opacity="0.9"/>
+              <path d="M-80 140 q120 40 160 -20" stroke="#7C5AB4" stroke-width="6" fill="none" opacity="0.12"/>
+            </g>
+
+            <!-- Left - Orva (silver / moon) -->
+            <g transform="translate(240,360) scale(1.05)">
+              <ellipse cx="0" cy="-10" rx="100" ry="150" fill="#F3F7FF" stroke="#DDECF7" stroke-width="2" />
+              <ellipse cx="6" cy="-38" rx="66" ry="96" fill="#E7F0FB" opacity="0.95" />
+              <circle cx="4" cy="-62" r="24" fill="#E7F0FB" opacity="0.95"/>
+              <path d="M-80 150 q120 40 150 -30" stroke="#9FBFEF" stroke-width="5" fill="none" opacity="0.12"/>
+            </g>
+
+            <!-- Front - Siska (sunflower) -->
+            <g transform="translate(360,820) scale(1.1)">
+              <ellipse cx="0" cy="-4" rx="110" ry="90" fill="#fff7ea" stroke="#F6D58A" stroke-width="2" />
+              <ellipse cx="-2" cy="-18" rx="70" ry="58" fill="#F9E9C5" />
+              <circle cx="-2" cy="-26" r="18" fill="#F4C24B" />
+              <path d="M-120 80 q160 40 220 -40" stroke="#F4C24B" stroke-width="6" fill="none" opacity="0.12"/>
+            </g>
+
+            <!-- floral bottom -->
+            <g transform="translate(80,1040) scale(1.05)" opacity="0.95">
+              <path d="M0 0 q80 40 180 8 q120 -36 240 -10 q60 16 120 48 v120 h-540z" fill="#fff" opacity="0.75"/>
+              <g transform="translate(0,-40)">
+                <circle cx="40" cy="60" r="26" fill="#F4C24B"/>
+                <circle cx="120" cy="40" r="20" fill="#C9E6D8"/>
+                <circle cx="220" cy="44" r="22" fill="#BDA7F3"/>
+                <circle cx="340" cy="30" r="24" fill="#CFE9F8"/>
+                <circle cx="460" cy="54" r="26" fill="#F4D7E6"/>
+              </g>
+            </g>
+
+            <!-- Title -->
+            <g transform="translate(60,30)">
+              <text x="420" y="100" text-anchor="middle" font-family="Playfair Display, serif" font-size="86" fill="#D2A9F9" style="letter-spacing:6px">SOV</text>
+              <text x="420" y="150" text-anchor="middle" font-family="Inter, Arial" font-size="20" fill="#6b6470">Siska • Orva • Viana</text>
+            </g>
+
+            <!-- Subtle sparkles -->
+            <g opacity="0.95" fill="#fff">
+              <circle cx="730" cy="360" r="2.8" opacity="0.9"/>
+              <circle cx="680" cy="520" r="1.8" opacity="0.9"/>
+              <circle cx="420" cy="720" r="2.4" opacity="0.9"/>
+              <circle cx="120" cy="580" r="2.4" opacity="0.9"/>
+              <circle cx="240" cy="820" r="2.0" opacity="0.9"/>
+            </g>
+          </svg>
+
+          <div class="cover-meta">
+            <h2>SOV</h2>
+            <p>Cover art preview — pastel fantasy • download as SVG untuk resolusi tak terbatas</p>
+            <div class="download-actions">
+              <button class="btn" onclick="downloadSVG()">Unduh Cover (SVG)</button>
+              <button class="btn secondary" onclick="downloadPNG()">Unduh Cover (PNG)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STORY -->
+        <div style="margin-top:18px" class="card">
+          <section id="story" class="info">
+            <h3>Sinopsis — SOV</h3>
+            <p style="color:var(--muted);margin-top:6px;line-height:1.6">
+              Di tengah kerajaan Vethiana yang diselimuti bunga dan kabut magis, tiga peri bernama Siska, Orva, dan Viana terikat oleh teka-teki masa lalu.
+              Ketika bunga-bunga tertentu mulai layu tanpa sebab, para peri muda harus menemukan sumber kehancuran yang meresap ke jantung kerajaan.
+              Siska — peri penyembuh yang cerah — membawa cahaya pagi kepada rakyatnya, Orva menjaga bisikan bulan dan hutan, sementara Viana adalah pewaris tahta yang menanggung tanggung jawab berat. 
+              Tali persahabatan dan rahasia lama diuji ketika mereka menemukan bahwa kerusakan Alam bukanlah bencana alami, melainkan kutukan yang terkait pada permata kerajaan.
+              Dengan kombinasi keceriaan, kebijaksanaan, dan kekuasaan, ketiga peri itu memulai perjalanan untuk mengungkap kebenaran — dan kembali menyatukan kerajaan yang terpecah.
+            </p>
+
+            <h4 style="margin-top:12px">Genre</h4>
+            <p style="color:var(--muted);margin-top:6px">Fantasy, Drama, Slice of Life, Light Mystery — cocok untuk pembaca Webtoon yang suka nuansa lembut dan emosional</p>
+
+            <h4 style="margin-top:12px">Arc Pembuka (Episode 1–5)</h4>
+            <ol style="color:var(--muted);margin-top:8px;line-height:1.6">
+              <li>Episode 1 — "Musim Bunga yang Hilang": Perkenalan Siska, Orva, Viana; bunga di sudut pasar tiba-tiba layu.</li>
+              <li>Episode 2 — "Bisik Bulan": Orva menemukan jejak magis di hutan; malam membawa mimpi-mimpi aneh.</li>
+              <li>Episode 3 — "Surat dari Tahta": Viana menerima pesan panjang dari kerabat kerajaan yang lenyap.</li>
+              <li>Episode 4 — "Jejak Cahaya": Siska membuka kunci sihir penyembuhan lama; petunjuk pertama pada permata.</li>
+              <li>Episode 5 — "Penyatuan Tiga": Ketiganya bersumpah untuk menjelajah ke Lembah Kabut dan menguji kekuatan persahabatan.</li>
+            </ol>
+          </section>
+        </div>
+
+      </section>
+
+      <!-- RIGHT PANEL -->
+      <aside>
+        <div class="card">
+          <h3>Rincian Karakter</h3>
+          <div style="margin-top:10px" class="grid-2">
+            <div class="character">
+              <div class="avatar" style="background:linear-gradient(135deg,var(--sun),#ffd66b)">S</div>
+              <div class="meta">
+                <strong>Siska</strong><br><small>Peri bunga matahari — penyembuh, ceria, penuh empati.</small>
+              </div>
+            </div>
+
+            <div class="character">
+              <div class="avatar" style="background:linear-gradient(135deg,var(--moon),#dfeeff)">O</div>
+              <div class="meta">
+                <strong>Orva</strong><br><small>Peri bulan & hutan — tenang, bijak, misterius.</small>
+              </div>
+            </div>
+
+            <div class="character" style="margin-top:8px">
+              <div class="avatar" style="background:linear-gradient(135deg,var(--lavender),var(--violet))">V</div>
+              <div class="meta">
+                <strong>Viana</strong><br><small>Pewaris tahta — anggun, tegas, memendam duka.</small>
+              </div>
+            </div>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+
+          <h3>Color Palette</h3>
+          <p style="color:var(--muted);font-size:13px;margin-top:6px">Klik swatch untuk menyalin hex ke clipboard</p>
+          <div class="swatches" id="swatches">
+            <div class="sw" style="background:var(--lavender)" data-hex="#BDA7F3">#BDA7F3</div>
+            <div class="sw" style="background:var(--violet)" data-hex="#7C5AB4">#7C5AB4</div>
+            <div class="sw" style="background:var(--moon)" data-hex="#DDECF7">#DDECF7</div>
+            <div class="sw" style="background:var(--gold)" data-hex="#F6D58A">#F6D58A</div>
+            <div class="sw" style="background:var(--sun)" data-hex="#F4C24B">#F4C24B</div>
+            <div class="sw" style="background:var(--mint)" data-hex="#C9E6D8">#C9E6D8</div>
+            <div class="sw" style="background:var(--sky)" data-hex="#CFE9F8">#CFE9F8</div>
+            <div class="sw" style="background:var(--blush)" data-hex="#F4D7E6">#F4D7E6</div>
+            <div class="sw" style="background:var(--ivory)" data-hex="#FFF9F2">#FFF9F2</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <button class="btn" onclick="copyAllHex()">Salin Semua Hex</button>
+            <a class="btn secondary" href="#" onclick="previewThumb();return false;">Preview Thumbnail</a>
+          </div>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+
+          <h3>Export & Hosting</h3>
+          <ol style="color:var(--muted);font-size:13px;line-height:1.6">
+            <li>Unduh cover dalam SVG (vektor) untuk kualitas tak terbatas.</li>
+            <li>Jika butuh raster, klik PNG (akan menghasilkan 2000×3111 PNG).</li>
+            <li>Upload folder (index.html) ke Netlify / Vercel untuk publish gratis.</li>
+          </ol>
+
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Petunjuk singkat publish (Netlify)</h3>
+          <ol style="color:var(--muted);font-size:13px;line-height:1.6">
+            <li>Buat akun gratis di <strong>netlify.com</strong>.</li>
+            <li>Drag & drop file <code>index.html</code> (atau folder) ke area deploy.</li>
+            <li>Netlify akan memberikan URL gratis (bisa ganti nama).</li>
+          </ol>
+          <p style="color:var(--muted);font-size:12px;margin-top:6px">Atau gunakan Vercel jika kamu sudah pakai GitHub.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © SOV • Fanmade preview • Simpan file <code>index.html</code> lalu buka di browser. Jika mau aku buat zip & kirimkan, bilang saja.
+  </footer>
+
+  <script>
+    // Utility: convert SVG node to serialized string
+    function getSVGString(svgNode) {
+      svgNode.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      var serializer = new XMLSerializer();
+      var svgString = serializer.serializeToString(svgNode);
+      // Fix for some browsers
+      svgString = svgString.replace(/(\w+)?:?xlink=/g, "xmlns:xlink=");
+      svgString = svgString.replace(/ns\d+:href/g, 'xlink:href');
+      return svgString;
+    }
+
+    // Download SVG directly
+    function downloadSVG(){
+      const svg = document.getElementById("coverSVG");
+      const svgString = getSVGString(svg);
+      const blob = new Blob([svgString], {type:"image/svg+xml;charset=utf-8"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "sov-cover.svg";
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(()=>{ document.body.removeChild(a); URL.revokeObjectURL(url); },300);
+    }
+
+    // Create PNG from SVG by drawing to canvas
+    function downloadPNG(){
+      const svg = document.getElementById("coverSVG");
+      const svgString = getSVGString(svg);
+      const canvas = document.createElement("canvas");
+      // set desired pixel size: keep aspect ratio 900x1400 -> choose 2000 width
+      const width = 2000;
+      const height = Math.round(width * 1400 / 900);
+      canvas.width = width;
+      canvas.height = height;
+      const img = new Image();
+      const svgBlob = new Blob([svgString], {type: "image/svg+xml;charset=utf-8"});
+      const url = URL.createObjectURL(svgBlob);
+      img.onload = function(){
+        const ctx = canvas.getContext("2d");
+        // white background
+        ctx.fillStyle = "#fff";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.drawImage(img,0,0,canvas.width,canvas.height);
+        URL.revokeObjectURL(url);
+        canvas.toBlob(function(blob){
+          const link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = "sov-cover.png";
+          document.body.appendChild(link);
+          link.click();
+          setTimeout(()=>{ document.body.removeChild(link); URL.revokeObjectURL(link.href); },400);
+        }, "image/png");
+      };
+      img.onerror = function(e){
+        alert("Gagal menghasilkan PNG di browser ini. Silakan unduh SVG dan konversi di editor gambar.");
+      }
+      img.src = url;
+    }
+
+    // hook download button in header
+    document.getElementById("downloadCoverBtn").addEventListener("click", downloadSVG);
+
+    // palette copy
+    document.querySelectorAll('.sw').forEach(el=>{
+      el.addEventListener('click',()=>{
+        const hex = el.getAttribute('data-hex');
+        navigator.clipboard && navigator.clipboard.writeText(hex).then(()=>{
+          el.style.transform = "scale(0.98)";
+          setTimeout(()=>el.style.transform="",220);
+          alert("Copied " + hex);
+        }).catch(()=>{
+          prompt("Copy hex:",hex);
+        });
+      });
+    });
+
+    function copyAllHex(){
+      const arr = Array.from(document.querySelectorAll('.sw')).map(e=>e.getAttribute('data-hex'));
+      const all 
